@@ -35,6 +35,10 @@ export const LABELS_MENU = {
     label: 'packageManager',
     description: 'Pick a package manager'
   },
+  gitInit: {
+    label: 'git',
+    description: 'Do you want to initialize git?'
+  },
   install: {
     label: 'install',
     description: 'Do you want to continue install?'

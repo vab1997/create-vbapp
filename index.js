@@ -4,6 +4,7 @@ import path from 'node:path'
 
 import { intro, outro, select, text, spinner, confirm } from '@clack/prompts'
 
+import { awaitExec } from './util.js'
 import { cancelProcess } from './exit-program.js'
 import { TEMPLATES_NAMES, LABELS_MENU, LABELS_PACKAGE_MANAGER } from './templateName.js'
 import colors from 'picocolors'
@@ -79,30 +80,21 @@ s.stop(colors.bold('Copied files'))
 if (packageManager) {
   s.start(colors.bold('Installing dependencies'))
 
-  const { exec } = await import('node:child_process')
-  const command = `${packageManager} install`
-
-  async function awaitExec () {
-    return new Promise((resolve, reject) => {
-      exec(command, { cwd: destination }, (error, stdout, stderr) => {
-        if (error) {
-          console.log(colors.red(error))
-          reject(error)
-        }
-
-        console.log('\n')
-        console.log(colors.green(stdout))
-        console.log(colors.yellow(stderr))
-        resolve(stdout || stderr)
-      }
-      )
-    })
-  }
-  await awaitExec()
+  const installPackage = `${packageManager} install`
+  await awaitExec({ command: installPackage, destination })
 
   s.stop(colors.bold('Installed dependencies'))
 }
 
+// git init
+s.start(colors.bold('Initializing git repository'))
+
+const gitInit = 'git init'
+await awaitExec({ command: gitInit, destination })
+
+s.stop(colors.bold('Initialized git repository'))
+
+// message final
 const messageNextSteps = colors.bgGreen(colors.black('Installation complete!')) + '\n\n' +
   colors.bgYellow(colors.black('next steps:')) + '\n' +
   colors.cyan('cd ' + nameProject) + colors.gray(' (move folder project)') + '\n' +
