@@ -1,14 +1,14 @@
 {
-  "name": "create-vbapp",
+  "name": "@vab1997/create-vbapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "`` create-vbapp `` is a command line tool to create projects with vbapp.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Victor Bejas",
   "license": "ISC",
   "dependencies": {
     "@clack/prompts": "0.7.0",
@@ -19,5 +19,13 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vab1997/create-vbapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vab1997/create-vbapp/issues"
+  },
+  "homepage": "https://github.com/vab1997/create-vbapp#readme"
 }
