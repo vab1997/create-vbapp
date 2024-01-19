@@ -1,11 +1,14 @@
 {
-  "name": "@vab1997/create-vbapp",
+  "name": "create-vbapp",
   "version": "1.0.0",
   "description": "`` create-vbapp `` is a command line tool to create projects with vbapp.",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "create-vbapp": "./bin/create-vbapp.js"
+  },
   "scripts": {
-    "co": "co"
+    "create-vbapp": "create-vbapp"
   },
   "keywords": [],
   "author": "Victor Bejas",
