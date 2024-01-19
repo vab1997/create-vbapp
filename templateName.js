@@ -1,0 +1,42 @@
+export const TEMPLATES_NAMES = {
+  'next-ts-tw': {
+    description: 'Next.js(14) + TypeScript + tailwindcss'
+  },
+  'astro-ts-tw': {
+    description: 'Astro(4) + TypeScript + tailwindcss'
+  }
+}
+
+export const LABELS_PACKAGE_MANAGER = {
+  pnpm: 'pnpm',
+  npm: 'npm',
+  yarn: 'yarn',
+  bun: 'bun'
+}
+
+export const LABELS_MENU = {
+  create: {
+    label: 'create-vbapp',
+    description: 'Create your app with a template'
+  },
+  projectName: {
+    label: 'dir',
+    description: 'Introduce name project'
+  },
+  template: {
+    label: 'tmpl',
+    description: 'Pick a template'
+  },
+  installDeps: {
+    label: 'installDeps',
+    description: 'Do you want to install dependencies?'
+  },
+  packageManager: {
+    label: 'packageManager',
+    description: 'Pick a package manager'
+  },
+  install: {
+    label: 'install',
+    description: 'Do you want to continue install?'
+  }
+}
