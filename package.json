@@ -1,6 +1,6 @@
 {
   "name": "create-app-c",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "`` create-app-c `` is a command line tool to create projects configured how I like them.",
   "main": "index.js",
   "type": "module",
