@@ -7,7 +7,7 @@ export const LABELS_PACKAGE_MANAGER = {
 
 export const LABELS_MENU = {
   create: {
-    label: 'create-vbapp',
+    label: 'create-app-c',
     description: 'Create your app with a template'
   },
   projectName: {
