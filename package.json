@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-app-c": "./bin/create-app-c.js"
+    "create-app-c": "bin/create-app-c.js"
   },
   "scripts": {
     "create-app-c": "create-app-c"
