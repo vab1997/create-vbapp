@@ -1,14 +1,14 @@
 {
-  "name": "create-vbapp",
+  "name": "create-app-c",
   "version": "1.0.0",
-  "description": "`` create-vbapp `` is a command line tool to create projects with vbapp.",
+  "description": "`` create-app-c `` is a command line tool to create projects configured how I like them.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "create-vbapp": "./bin/create-vbapp.js"
+    "create-app-c": "./bin/create-app-c.js"
   },
   "scripts": {
-    "create-vbapp": "create-vbapp"
+    "create-app-c": "create-app-c"
   },
   "keywords": [],
   "author": "Victor Bejas",
