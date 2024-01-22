@@ -6,7 +6,8 @@ import { intro, outro, select, text, spinner, confirm } from '@clack/prompts'
 
 import { awaitExec } from './util.js'
 import { cancelProcess } from './exit-program.js'
-import { TEMPLATES_NAMES, LABELS_MENU, LABELS_PACKAGE_MANAGER } from './templateName.js'
+import { TEMPLATES_NAMES } from './template-name.js'
+import { LABELS_MENU, LABELS_PACKAGE_MANAGER } from './constant.js'
 import colors from 'picocolors'
 
 const messageWelcome = `${colors.bgYellow(colors.black(` ${LABELS_MENU.create.label} `))}  ${colors.bold(LABELS_MENU.create.description)}`
